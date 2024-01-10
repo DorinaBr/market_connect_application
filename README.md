@@ -3,12 +3,12 @@ MarketConnect is a dynamic web application designed to bridge the gap between cu
 
 ## Core Functionalities
 
-#Customer Accounts:
+# Customer Accounts:
 - Users can create personal accounts with details such as name, email, and password.
 - Each customer account should have the ability to follow or bookmark favorite products.
 - Customers can leave reviews and ratings for products they have purchased.
   
-#Product Catalog:
+# Product Catalog:
 - A comprehensive listing of products categorized by type, vendor, and price.
 - Each product entry includes a description, price, vendor information, and customer reviews.
 - Products can be searched and filtered based on various attributes.
