@@ -4,6 +4,8 @@ import com.market.connect.models.ProductCategory;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 @Entity
@@ -21,7 +23,6 @@ public class Product {
     @MapKeyColumn(name = "customer_email")
     @Column(name = "ratings")
     private Map<Customer, Double> customerRatings;
-
     @ElementCollection
     @CollectionTable(name = "customer_reviews", joinColumns = @JoinColumn(name = "customer_id"))
     @MapKeyColumn(name = "customer_email")
@@ -33,4 +34,6 @@ public class Product {
     private ProductCategory productCategory;
     @Column(name = "product_description")
     private String productDescription;
+    @ManyToMany(mappedBy = "products")
+    private List<Order> orders = new ArrayList<>();
 }
