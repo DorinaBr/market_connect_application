@@ -1,4 +1,4 @@
-package com.market.connect;
+package com.market.connect.config;
 
 
 import org.modelmapper.ModelMapper;
